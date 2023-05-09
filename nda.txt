@@ -1,0 +1,21 @@
+Date of last modification: 7/18/2015
+
+Date: ______________________________
+
+Between Mark Watson (a limited liability CONSULTANT) and the CUSTOMER: ____________________________________
+
+1.  Both the CONSULTANT and CUSTOMER agree that the CONSULTANT functions as a limited liability consultant: the CONSULTANT's legal liability for any customer project is limited to the amount of money paid to the CONSULTANT to perform work on the project.
+
+2. CONSULTANT agrees to hold CUSTOMER's proprietary information in strict confidence and will make all reasonable efforts to not disclose any proprietary information to any third party. Proprietary information includes any technical and business information that is not in the public domain or common knowledge. Both the CONSULTANT and CUSTOMER agree to take all reasonable precautions for safeguarding each others intellectual property. This paragraph has the following exception for projects developed under an open source software license: software developed will be released publicly, but, details of the CUSTOMER's business will remain confidential. CUSTOMER agrees to only furnish data, access to databases, and code with CONSULTANT that they have the rights and authorization to share with CONSULTANT.
+
+3. Both the CONSULTANT and CUSTOMER understand that in any project there is some legal risk of infringing on a copyright, patent, trade secret, or other proprietary right held by any third party. The CUSTOMER accepts any liability for infringing on third party property right for any work the CONSULTANT performs for the CUSTOMER. The CONSULTANT will work with the CUSTOMER to avoid any infringement of third party property rights. When working for the CUSTOMER, the CONSULTANT agrees to not use any working materials or algorithms that he knows infringe on third party property rights.
+
+4. Upon termination of this agreement and at CUSTOMER's request, or at any time at CUSTOMER's request, (i) CONSULTANT shall at CUSTOMER's expense promptly return or deliver to CUSTOMER and/or destroy all materials containing or constituting proprietary information, including any software developed by CONSULTANT for CUSTOMER (and paid for per this agreement) and any copies and extracts thereof and (ii) CONSULTANT shall not use such proprietary information in any way for any purpose. CONSULTANT does maintain a permanent copy of the text (but not attachments) of all emails with CUSTOMER and work logs.
+
+5. Upon termination of work performed by CONSULTANT for the CUSTOMER, both CUSTOMER and CONSULTANT agree that the terms of this agreement remain in effect. This includes protecting intellectual property of the other party. In case of dispute governing law is assumed to be that of the state of California.
+
+6. If a provision of this Agreement is or becomes illegal, invalid or unenforceable in any jurisdiction, that shall not affect the validity or enforceability in that jurisdiction of any other provision of this Agreement.
+
+Signed: Mark Watson: _____________________________
+
+Signed: CUSTOMER: _____________________________

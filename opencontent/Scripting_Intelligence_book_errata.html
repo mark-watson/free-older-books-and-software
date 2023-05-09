@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+
+
+		<title>Information on Mark Watson's Book "Scripting Intelligence: Web 3.0 Information, Gathering and Processing"</title>
+
+<h3>Information on Mark Watson's Book "Scripting Intelligence: Web 3.0 Information, Gathering and Processing"</h3>
+
+
+<p><strong>Please check the APress web site for code downloads, errata, etc.</strong></p>
+
+<p><a href="https://web.archive.org/web/20140329071913/http://apress.com/book/view/9781430223511" target="new">APress web page for my book</a> that also contains the code download link.</p>
+
+<p>February 2012: I put the example source code and data in a <a href="https://web.archive.org/web/20140329071913/https://github.com/mark-watson/scripting-intelligence-book-examples">github repo</a>.</p>
+
+<h3>General notes on Ruby 1.8.x vs. Ruby 1.9.x vs. JRuby compatibility:</h3>
+
+<p>I have used Ruby 1.9.1 for much of my development since January 2009.
+ Ruby 1.9.x does not require "require 'rubygems'" before requiring 
+locally installed gem libraries. If you are using Ruby 1.8.x, and if any
+ of my example programs fail to load gems that you have installed, then I
+ probably did not put a "require 'rubygems'" at the top of the example 
+source file - so, please add this statement and try re-running the 
+example.</p>
+
+<h3>Corrections and comments on book material:</h3>
+
+<h4>3/31/2012: Running the Mashup Rails (Google Maps and Twitter) web app</h4>
+<b>Expect a lot of problems getting this 4 year old example running.</b>
+<p>
+	Your best bet getting this old example web app running is to stick with the old version of Rails (2.3.2)
+	that I used to write it and use Ruby 1.8.7. The example code is not compatible with Ruby 1.9.x. If you want
+	to use JRuby that is also possible but you might want to switch the database to MySQL or PostgreSQL to
+	avoid the hassles of getting SQLite3 working with JRuby.
+</p>
+<p>
+	You will have to either find an old version of the Twitter gem or change the Ruby code in the MashupController
+	class. The new Twitter gem uses OAuth, which is good, but breaks the APIs that I used almost 4 years ago
+	when I wrote this example web application.
+</p>	
+<p>
+	I believe that the Google Maps APIs have also been changed.
+</p>
+
+<h4>3/30/2012: Using the AMI</h4>
+
+<p>The same reader who reported problems on 2/24/2012 with the AMI is 
+now having problems with the Ruby setup on the AMI, specifically, it 
+looks like he did a "gem install rails" and is now running into a Rails 
+2.x vs. Rails 3.x compatibility issue.</p>
+<p><b>I recommend that readers stop using the AMI</b> and instead just get the latest version of the example source code and data files from the <a href="https://web.archive.org/web/20140329071913/https://github.com/mark-watson/scripting-intelligence-book-examples">github repo</a>
+ for the book examples. I had originally setup the Amazon AMI to save 
+readers some time, but it is now apparently out of date. When you use 
+the Rails examples, don't try to use the latest versions of Rails. I 
+used version 2.3.2 of Rails while writing this book.
+
+</p><h4>2/24/2012: Using the AMI</h4>
+
+A reader mentioned that using the AMI to start an EC2 instance with the 
+default security settings didn't work; he reported: "After more trials 
+and errors, I finally am able to connect to the AMI now. I was not able 
+to connect because of the security setting when setting up the AMI 
+instance.  The Amazon has three security settings for setting up the AMI
+ instance, the default security setting does not work."
+
+<h4>7/4/2009: Chapter 5: typo on page 98 and a correction to example program</h4>
+
+In the middle of page 98, change two occurrences of "http::" to "http:".
+ Also, in the test file redland_demo.rb, globally make this same edit.
+
+<h4>6/7/2009: Chapter 10: Note on installing scRUBYt!</h4>
+
+Make sure that you get Peter's version 0.4.11 from github, and not the
+released gem:
+<pre>	gem sources -a http://gems.github.com
+	gem install scrubber-scrubyt
+</pre>
+
+<h4>6/5/2009: Chapter 9, "Using JRuby and Lucene"</h4>
+
+The build instructions are listed as:
+<pre>	git clone git://github.com/davidx/jruby-lucene.git 
+	cd jruby-lucene 
+	gem build 
+	gem install jruby-lucene-*.gem 
+</pre>
+They should be:
+<pre>	git clone git://github.com/davidx/jruby-lucene.git 
+	cd jruby-lucene 
+	rake build 
+	gem install jruby-lucene-*.gem 
+</pre>
+Also: here, "gem" should be the JRuby gem, so unless the JRuby bin
+directory is before the Ruby bin directory on your path, you might want to use:
+<pre>	jruby -S gem install jruby-lucene-*.gem 
+</pre>
+
+Also, when running the interactive example, it may be required to require
+rubygems before jruby/lucene:
+<pre>	irb(main):002:0&gt; require 'rubygems'
+	=&gt; true
+	irb(main):003:0&gt; require 'jruby/lucene'
+	=&gt; true
+</pre>
+
+<h4>Chapter 11: "Using CouchDB"</h4>
+
+In the code example:
+<pre>	# with !, it creates the database if it doesn't already exist 
+	db = CouchRest.database!("http://127.0.0.1:5984/test") 
+	response = db.save_doc({'key 1' =&gt; 'value 1', 'key 2' =&gt; ..... })
+</pre>
+For some versions of the gem, the method "save_doc" may be "save".
+
+
+	
+
+</div>
+
+		
+	
+
+
+
+
+
+
+
+</body></html>
+<!--
+     FILE ARCHIVED ON 7:19:13 Mar 29, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:56:11 May 28, 2016.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
